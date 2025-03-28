@@ -10,7 +10,8 @@
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build": "vite build && echo '/* /index.html 200' > build/_redirects"
     
   },
   "dependencies": {
