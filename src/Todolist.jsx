@@ -13,7 +13,7 @@ const Todolist = (props) => {
         (<p>You haven't added any activity</p>):
         (
           activityArr.map((item,index)=>{
-           return <Todoitem item={item} index={index} id={item.id} activityArr={activityArr} setactivityArr={setactivityArr}/>
+           return <Todoitem  key={item.id || index} item={item} index={index} id={item.id} activityArr={activityArr} setactivityArr={setactivityArr}/>
 
           })
         )
